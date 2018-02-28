@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Isabelleliu">
 <meta property="og:description" content="关于本地配置：输入hexo server命令后本地还是无法浏览网页的问题：在hexo server命令前做这样几步：  npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】 如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：在博客文件夹server模块下找到hexo\node_modules\hexo-server\">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-28T14:46:24.799Z">
+<meta property="og:updated_time" content="2018-02-28T14:47:53.387Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决hexo配置静态博客的各种问题">
 <meta name="twitter:description" content="关于本地配置：输入hexo server命令后本地还是无法浏览网页的问题：在hexo server命令前做这样几步：  npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】 如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：在博客文件夹server模块下找到hexo\node_modules\hexo-server\">
@@ -97,12 +97,12 @@
 <li>如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：<br>在博客文件夹server模块下找到hexo\node_modules\hexo-server\index.js，然后修改里面的port<br>【据网友讲，是福昕阅读器的一个服务占用了4000端口……】</li>
 </ol>
 <p>关于网站发布：deploy步骤的各种问题解决：<br> ·在输入hexo d 或者hexo g的过程中发现多次需要输入用户名和密码，输完之后还不允许访问【这就很醉】：<br> 直接就不输了，一劳永逸的办法就是把_config.yml中的repo部分的配置改为：<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:AmnaLiu/AmnaLiu.github.io.git<br> ·现在不用输个人信息了，但是还是不允许访问，因为要输passphrase（这个是在创建ssh的时候被系统问到的），记得当时passphrase部分是直接回车跳过的，于是直接点确定，但是并不允许访问【自己的家门都进不去就很气】：<br>忘记当时除了问passphrase之前，还问了存储ssh的文件名，我随便设置了一个文件名，以至于出现这个错误。为避免麻烦，建议在输入ssh创建命令后一路回车，啥都别输入。<br>·deploy done了之后，输入自己的域名<a href="https://amnaliu.github.io/打算见证奇迹，发现直接显示自己github">https://amnaliu.github.io/打算见证奇迹，发现直接显示自己github</a> repository中的README…..:<br>这个嘛，就是那个万恶的域名了，在_config.yml中的URL部分也输入：<a href="https://amnaliu.github.io/。这里不能空，空了就会在输入hexo的clean/d/g的命令的时候都会出现一个错误：FATAL">https://amnaliu.github.io/。这里不能空，空了就会在输入hexo的clean/d/g的命令的时候都会出现一个错误：FATAL</a> Cannot read property ‘replace’ of null</p>
-<p>关于文章更新：<br>更新是需要一定的时间的（大概3分钟左右），是挺慢的，有了新的东西之后，还是要做hexo g和d，等几分钟就可以看到更新了。</p>
+<p>关于文章更新：<br>更新是需要一定的时间的（大概3分钟左右），是挺慢的，有了新的东西之后，还是要做hexo g和d，等几分钟就可以看到更新了。【有的时候也快，搞不太懂，估计网络问题吧】</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://amnaliu.github.io/2018/02/28/helllllllo/" data-id="cje772mg70000pg856mtbgrw6" class="article-share-link">Share</a>
+      <a data-url="https://amnaliu.github.io/2018/02/28/helllllllo/" data-id="cje7742tn0000bw85jt85mwyt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/problem-solving/">problem solving</a></li></ul>
