@@ -5,20 +5,20 @@
   
 
   
-  <title>解决输入hexo server命令后本地还是无法浏览网页的问题 | Isabelleliu</title>
+  <title>解决hexo配置静态博客的各种问题 | Isabelleliu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在hexo server命令前做这样几步：  npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】 如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：在博客文件夹server模块下找到hexo\node_modules\hexo-server\index.js，然后修改里面的port【据网友讲，是福昕阅读器的一个服务">
+  <meta name="description" content="关于本地配置：输入hexo server命令后本地还是无法浏览网页的问题：在hexo server命令前做这样几步：  npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】 如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：在博客文件夹server模块下找到hexo\node_modules\hexo-server\">
 <meta name="keywords" content="problem solving">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决输入hexo server命令后本地还是无法浏览网页的问题">
-<meta property="og:url" content="http://AmnaLiu.com/2018/02/28/helllllllo/index.html">
+<meta property="og:title" content="解决hexo配置静态博客的各种问题">
+<meta property="og:url" content="https://amnaliu.github.io/2018/02/28/helllllllo/index.html">
 <meta property="og:site_name" content="Isabelleliu">
-<meta property="og:description" content="在hexo server命令前做这样几步：  npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】 如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：在博客文件夹server模块下找到hexo\node_modules\hexo-server\index.js，然后修改里面的port【据网友讲，是福昕阅读器的一个服务">
+<meta property="og:description" content="关于本地配置：输入hexo server命令后本地还是无法浏览网页的问题：在hexo server命令前做这样几步：  npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】 如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：在博客文件夹server模块下找到hexo\node_modules\hexo-server\">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-28T13:23:17.513Z">
+<meta property="og:updated_time" content="2018-02-28T14:29:53.023Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解决输入hexo server命令后本地还是无法浏览网页的问题">
-<meta name="twitter:description" content="在hexo server命令前做这样几步：  npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】 如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：在博客文件夹server模块下找到hexo\node_modules\hexo-server\index.js，然后修改里面的port【据网友讲，是福昕阅读器的一个服务">
+<meta name="twitter:title" content="解决hexo配置静态博客的各种问题">
+<meta name="twitter:description" content="关于本地配置：输入hexo server命令后本地还是无法浏览网页的问题：在hexo server命令前做这样几步：  npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】 如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：在博客文件夹server模块下找到hexo\node_modules\hexo-server\">
   
     <link rel="alternate" href="/atom.xml" title="Isabelleliu" type="application/atom+xml">
   
@@ -63,7 +63,7 @@
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://AmnaLiu.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://amnaliu.github.io"></form>
       </div>
     </div>
   </div>
@@ -83,7 +83,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      解决输入hexo server命令后本地还是无法浏览网页的问题
+      解决hexo配置静态博客的各种问题
     </h1>
   
 
@@ -91,16 +91,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在hexo server命令前做这样几步：</p>
+        <p>关于本地配置：输入hexo server命令后本地还是无法浏览网页的问题：<br>在hexo server命令前做这样几步：</p>
 <ol>
 <li>npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】</li>
 <li>如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：<br>在博客文件夹server模块下找到hexo\node_modules\hexo-server\index.js，然后修改里面的port<br>【据网友讲，是福昕阅读器的一个服务占用了4000端口……】</li>
 </ol>
+<p>关于网站发布：deploy步骤的各种问题解决：<br> ·在输入hexo d 或者hexo g的过程中发现多次需要输入用户名和密码，输完之后还不允许访问【这就很醉】：<br> 直接就不输了，一劳永逸的办法就是把_config.yml中的repo部分的配置改为：<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:AmnaLiu/AmnaLiu.github.io.git<br> ·现在不用输个人信息了，但是还是不允许访问，因为要输passphrase（这个是在创建ssh的时候被系统问到的），记得当时passphrase部分是直接回车跳过的，于是直接点确定，但是并不允许访问【自己的家门都进不去就很气】：<br>忘记当时除了问passphrase之前，还问了存储ssh的文件名，我随便设置了一个文件名，以至于出现这个错误。为避免麻烦，建议在输入ssh创建命令后一路回车，啥都别输入。<br>·deploy done了之后，输入自己的域名<a href="https://amnaliu.github.io/打算见证奇迹，发现直接显示自己github">https://amnaliu.github.io/打算见证奇迹，发现直接显示自己github</a> repository中的README…..:<br>这个嘛，就是那个万恶的域名了，在_config.yml中的URL和root部分，请保留默认，请保留默认，请保留默认！你想改也没关系，不过仅限于买到域名的氪金大佬。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://AmnaLiu.com/2018/02/28/helllllllo/" data-id="cje7634ta0000vw85b4x4og5i" class="article-share-link">Share</a>
+      <a data-url="https://amnaliu.github.io/2018/02/28/helllllllo/" data-id="cje76llqi00000w857kytng4u" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/problem-solving/">problem solving</a></li></ul>
@@ -165,7 +166,7 @@
       <ul>
         
           <li>
-            <a href="/2018/02/28/helllllllo/">解决输入hexo server命令后本地还是无法浏览网页的问题</a>
+            <a href="/2018/02/28/helllllllo/">解决hexo配置静态博客的各种问题</a>
           </li>
         
           <li>
