@@ -553,6 +553,87 @@
 
 
   
+    <article id="post-helllllllo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/28/helllllllo/">解决hexo配置静态博客的各种问题</a>
+    </h1>
+  
+
+        
+        <a href="/2018/02/28/helllllllo/" class="archive-article-date">
+  	<time datetime="2018-02-28T13:11:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>关于本地配置：输入hexo server命令后本地还是无法浏览网页的问题：<br>在hexo server命令前做这样几步：</p>
+<ol>
+<li>npm install hexo-server 输入该命令下载server模块 【尤其针对3.0以后的hexo】</li>
+<li>如果完成第一步后还是无法浏览，那么就要修改localhost的端口号了：<br>在博客文件夹server模块下找到hexo\node_modules\hexo-server\index.js，然后修改里面的port<br>【据网友讲，是福昕阅读器的一个服务占用了4000端口……】</li>
+</ol>
+<p>关于网站发布：deploy步骤的各种问题解决：<br> ·在输入hexo d 或者hexo g的过程中发现多次需要输入用户名和密码，输完之后还不允许访问【这就很醉】：<br> 直接就不输了，一劳永逸的办法就是把_config.yml中的repo部分的配置改为：<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:AmnaLiu/AmnaLiu.github.io.git<br> ·现在不用输个人信息了，但是还是不允许访问，因为要输passphrase（这个是在创建ssh的时候被系统问到的），记得当时passphrase部分是直接回车跳过的，于是直接点确定，但是并不允许访问【自己的家门都进不去就很气】：<br>忘记当时除了问passphrase之前，还问了存储ssh的文件名，我随便设置了一个文件名，以至于出现这个错误。为避免麻烦，建议在输入ssh创建命令后一路回车，啥都别输入。<br>·deploy done了之后，输入自己的域名<a href="https://amnaliu.github.io/打算见证奇迹，发现直接显示自己github">https://amnaliu.github.io/打算见证奇迹，发现直接显示自己github</a> repository中的README…..:<br>这个嘛，就是那个万恶的域名了，在_config.yml中的URL部分也输入：<a href="https://amnaliu.github.io/。这里不能空，空了就会在输入hexo的clean/d/g的命令的时候都会出现一个错误：FATAL">https://amnaliu.github.io/。这里不能空，空了就会在输入hexo的clean/d/g的命令的时候都会出现一个错误：FATAL</a> Cannot read property ‘replace’ of null</p>
+<p>关于文章更新：<br>更新是需要一定的时间的（大概3分钟左右），是挺慢的，有了新的东西之后，还是要做hexo g和d，等几分钟就可以看到更新了。【有的时候也快，搞不太懂，估计网络问题吧】</p>
+<p>致谢：<br>整个配置过程感谢以下博客：<br><a href="https://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="noopener">https://www.jianshu.com/p/e99ed60390a8</a> 关于基本配置<br><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="noopener">https://www.zhihu.com/question/24422335</a> 关于主题<br><a href="https://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">https://www.cnblogs.com/visugar/p/6821777.html</a> 关于基本配置 （这里有些小问题，主要是关于在哪个文件夹中做什么操作说的不够清楚，导致按照这个来以后，推翻重做了一遍，按第一个教程再走，才成功的，不过还是感谢这篇文章给的启蒙指导）<br><a href="http://www.360doc.com/content/17/0630/15/29401987_667740996.shtml" target="_blank" rel="noopener">http://www.360doc.com/content/17/0630/15/29401987_667740996.shtml</a> 关于域名绑定</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">problem solving</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/02/28/helllllllo/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
 
 
